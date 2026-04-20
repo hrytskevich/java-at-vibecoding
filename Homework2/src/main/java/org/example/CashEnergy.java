@@ -6,6 +6,7 @@ public class CashEnergy {
     public static void main(String[] args) {
         int visitorAge;
         double accountBalance;
+        double entryFee;
         boolean isInvited;
         boolean isBlackList;
         boolean isOver18;
@@ -20,10 +21,12 @@ public class CashEnergy {
         isOver18 = visitorAge >= 18;
         isInvitedOrHighBalance = isInvited || (accountBalance > 50_000);
         hasAccess = isOver18 && isInvitedOrHighBalance && !isBlackList;
+        entryFee = Math.round(accountBalance * 7.5) / 100.0;
 
         System.out.println("Возраст посетителя: " + visitorAge +
                 ";\nБаланс счёта: " + accountBalance +
-                ";\nНаличие приглашения: " + (isInvited ? "Да" : "Нет") +
+                ";\n\t(обязательный добровольный взнос: " + entryFee +
+                ")\nНаличие приглашения: " + (isInvited ? "Да" : "Нет") +
                 ";\nВ чёрном списке: " + (isBlackList ? "Да" : "Нет") +
                 (hasAccess ? ".\nПОЛУЧЕН ДОПУСК НА БИЗНЕС-ВСТРЕЧУ" : ".\n!!! НЕТ ДОПУСКА НА БИЗНЕС-ВСТРЕЧУ"));
     }
