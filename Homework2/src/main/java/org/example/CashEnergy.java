@@ -14,12 +14,12 @@ public class CashEnergy {
         boolean hasAccess;
 
         Random random = new Random();
-        visitorAge = random.nextInt(80);
+        visitorAge = random.nextInt(1, 80);
         accountBalance = Math.round(random.nextDouble(1_000_000) * 100.0) / 100.0;
         isInvited = false;
         isBlackList = false;
         isOver18 = visitorAge >= 18;
-        isInvitedOrHighBalance = isInvited || (accountBalance > 50_000);
+        isInvitedOrHighBalance = isInvited || accountBalance > 50_000;
         hasAccess = isOver18 && isInvitedOrHighBalance && !isBlackList;
         entryFee = Math.round(accountBalance * 7.5) / 100.0;
 
@@ -30,4 +30,5 @@ public class CashEnergy {
                 ";\nВ чёрном списке: " + (isBlackList ? "Да" : "Нет") +
                 (hasAccess ? ".\nПОЛУЧЕН ДОПУСК НА БИЗНЕС-ВСТРЕЧУ" : ".\n!!! НЕТ ДОПУСКА НА БИЗНЕС-ВСТРЕЧУ"));
     }
+
 }
