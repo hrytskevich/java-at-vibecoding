@@ -8,8 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Homework2" />
         <module name="Homework1" />
-        <module name="Homework_4_1" />
         <module name="Homework_4_2" />
+        <module name="Homework5" />
+        <module name="Homework_4_1" />
         <module name="Homework3_2" />
         <module name="Homework3_1" />
       </profile>
