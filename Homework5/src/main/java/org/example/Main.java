@@ -36,12 +36,12 @@ public class Main {
     }
 
     public static void logEvent (String message) {
-        System.out.printf("[INFO] %s\n", message);
+        System.out.printf("[INFO] %s%n", message);
     }
 
     public static void logEvent (String message, boolean isCritical) {
         if (isCritical) {
-            System.out.printf("[CRITICAL] %s\n", message);
+            System.out.printf("[CRITICAL] %s%n", message);
         }
         else {
             logEvent(message);
