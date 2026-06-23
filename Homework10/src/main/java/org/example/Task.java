@@ -18,10 +18,10 @@ public class Task {
 
     public void makeDone() {
         if (this.isDone) {
-            System.out.println("Задача уже была выполнена!");
+            System.out.println("-- Задача уже была выполнена!");
         } else {
             this.isDone = true;
-            System.out.println("Успешно! Задача выполнена.");
+            System.out.println("-- Успешно! Задача выполнена.");
         }
     }
 
