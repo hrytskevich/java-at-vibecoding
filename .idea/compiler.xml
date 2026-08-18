@@ -21,6 +21,7 @@
         <module name="Homework11" />
         <module name="Homework3_2" />
         <module name="Homework3_1" />
+        <module name="Homework15" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
